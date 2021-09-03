@@ -1,24 +1,24 @@
 let dice = {side:6} //กำหนดค่าลูกเต๋า
 function play(round) {// round กำหนดจำนวนรอบ
     for(let count=1;count <= round ;count++){ // กำหนดจำนวนรอบในการเล่น
-        player1.roll = rollDice(); //player1 ทอยลูกเต๋า
-        player2.roll = rollDice(); //player2 ทอยลูกเต๋า
+        player1.roll = rollDice(); //player1 ทอยลูกเต๋า , เข้าถึง key "roll" ผ่าน obj player1 เพื่อเปลี่ยนให้ value ให้เป็นเลขของลูกเต๋าที่ทอยได้
+        player2.roll = rollDice(); //player2 ทอยลูกเต๋า , เข้าถึง key "roll" ผ่าน obj player2 เพื่อเปลี่ยนให้ value ให้เป็นเลขของลูกเต๋าที่ทอยได้
         console.log("round :"+count);
         if(player1.roll > player2.roll){ //player1 ชนะ
-            player1.result = results.WIN
-            player2.result = results.LOSE
+            player1.result = results.WIN //เข้าถึง key "result" ผ่าน obj player1 เพื่อเปลี่ยนให้ value ให้เป็น WIN
+            player2.result = results.LOSE //เข้าถึง key "result" ผ่าน obj player2 เพื่อเปลี่ยนให้ value ให้เป็น LOSE
             console.log(player1);
             console.log(player2);
             console.log(player1.name +":  Win!!")
         }else if(player1.roll === player2.roll){ // เสมอ
-            player1.result = results.DRAW
-            player2.result = results.DRAW
+            player1.result = results.DRAW //เข้าถึง key "result" ผ่าน obj player1 เพื่อเปลี่ยนให้ value ให้เป็น DRAW
+            player2.result = results.DRAW //เข้าถึง key "result" ผ่าน obj player2 เพื่อเปลี่ยนให้ value ให้เป็น DRAW
             console.log(player1);
             console.log(player2);
             console.log("Draw!!")
         }else{                              //player2 ชนะ
-            player1.result = results.LOSE
-            player2.result = results.WIN
+            player1.result = results.LOSE //เข้าถึง key "result" ผ่าน obj player1 เพื่อเปลี่ยนให้ value ให้เป็น LOSE
+            player2.result = results.WIN ////เข้าถึง key "result" ผ่าน obj player2 เพื่อเปลี่ยนให้ value ให้เป็น WIN
             console.log(player1);
             console.log(player2);
             console.log(player2.name +":  Win!!")
