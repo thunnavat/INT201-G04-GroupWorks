@@ -1,10 +1,8 @@
 let dice = {side:6} //กำหนดค่าลูกเต๋า
-
 function play(round) {// round กำหนดจำนวนรอบ
     for(let count=1;count <= round ;count++){ // กำหนดจำนวนรอบในการเล่น
         player1.roll = rollDice(); //player1 ทอยลูกเต๋า
         player2.roll = rollDice(); //player2 ทอยลูกเต๋า
-		console.log( player1.roll,player2.roll)
         console.log("round :"+count);
         if(player1.roll > player2.roll){ //player1 ชนะ
             player1.result = results.WIN
@@ -50,5 +48,7 @@ let player2 = { //เก็บค่าต่างๆของ player2
     roll: 0, //แต้มลูกเต๋า
     result: results //ผลลัพธ์ที่ได้
 }
-// console.log(player1.name)
-play(3);
+
+console.log("-------------")
+play(3); //ใส่จำนวนรอบ
+console.log("-------------")
