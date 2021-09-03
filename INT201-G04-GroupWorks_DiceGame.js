@@ -18,7 +18,7 @@ function play(round) {// round กำหนดจำนวนรอบ
             console.log("Draw!!")
         }else{                              //player2 ชนะ
             player1.result = results.LOSE //เข้าถึง key "result" ผ่าน obj player1 เพื่อเปลี่ยนให้ value ให้เป็น LOSE
-            player2.result = results.WIN ////เข้าถึง key "result" ผ่าน obj player2 เพื่อเปลี่ยนให้ value ให้เป็น WIN
+            player2.result = results.WIN //เข้าถึง key "result" ผ่าน obj player2 เพื่อเปลี่ยนให้ value ให้เป็น WIN
             console.log(player1);
             console.log(player2);
             console.log(player2.name +":  Win!!")
