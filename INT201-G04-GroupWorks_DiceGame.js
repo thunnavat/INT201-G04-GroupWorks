@@ -1,4 +1,5 @@
-let dice =  6 //กำหนดค่าลูกเต๋า
+let dice = {side:6} //กำหนดค่าลูกเต๋า
+
 function play(round) {// round กำหนดจำนวนรอบ
     for(let count=1;count <= round ;count++){ // กำหนดจำนวนรอบในการเล่น
         player1.roll = rollDice(); //player1 ทอยลูกเต๋า
